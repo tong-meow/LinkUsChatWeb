@@ -21,4 +21,4 @@
 - Font resources: [Google Fonts](https://fonts.google.com)
 
 - HTML / CSS: [MDN Web Docs](https://developer.mozilla.org/en-US/)
-- Key Vision & UI Concept Reference: *Death Stranding* by Kojima Studio
+- Key Vision & UI Concept Reference: *Death Stranding* by Kojima Productions
