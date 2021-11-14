@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="user_name">Nickname</string>
+    <string name="room_name">Room Name</string>
+    <string name="enter_room">Enter Room</string>
+    <string name="transparent_board">transparent_board</string>
+    <string name="background_image">background_image</string>
+    <string name="title">LINK US</string>
+
+    <string name="room_title">ChatRoom #</string>
+    <string name="send">SEND</string>
+
+    <string name="room_info">Room Info</string>
+    <string name="room_list">Room List</string>
+    <string name="about">About</string>
+    <string name="logout">Log Out</string>
+
+    <string name="about_me">About Me</string>
+    <string name="about_content1">This website is designed and developed by tong-meow.</string>
+    <string name="about_content2">The aesthetic idea and key vision of this website comes from Death Stranding by Kojima Productions.</string>
+    <string name="back">Back</string>
+</resources>

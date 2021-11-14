@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/tsprtBoard"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/transparent_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/roomTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/room_title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/tsprtBoard"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textpad"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toBottomOf="@+id/tsprtBoard"
+        app:layout_constraintVertical_bias="0.148"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendBtn"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/dark_green"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toBottomOf="@+id/tsprtBoard"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="248dp"
+        android:layout_height="352dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tsprtBoard"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toTopOf="@+id/tsprtBoard"
+        app:layout_constraintVertical_bias="0.495" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

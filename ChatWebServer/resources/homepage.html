@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkUs-Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="homestyles.css"/>
+</head>
+
+<body>
+<h1>LINK US</h1>
+
+<nav>
+    <button id="home" onClick="window.location.reload();">HOME</button>
+    <button id="roomInfo">ROOM INFO</button>
+    <button id="roomList">ROOM LIST</button>
+    <button id="about" onClick="window.open('about.html'); return false;">ABOUT</button>
+</nav>
+
+<div class="login">
+    <form class="form">
+        <input placeholder="Nickname" type="text" id="nickname" required>
+        <input placeholder="Room Name" type="text" id="roomName" required>
+        <button type="button" id="loginButton">Enter Room</button>
+    </form>
+    <div id="messageBoard">
+    </div>
+    <div>
+        <form class="typeBar">
+            <input type="text" id="type" required>
+            <button type="button" id="send">Send</button>
+        </form>
+    </div>
+</div>
+
+<script src="homepage.js"></script>
+</body>
+
+<footer>
+    &copy;2021 by Tong
+</footer>
+
+</html>

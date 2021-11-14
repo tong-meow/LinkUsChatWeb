@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/tsprtBoard"
+        android:layout_width="0dp"
+        android:layout_height="383dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="59dp"
+        android:contentDescription="@string/transparent_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/homepageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/tsprtBoard"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints="Nickname"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/roomName"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toTopOf="@+id/tsprtBoard"
+        tools:ignore="LabelFor,MissingConstraints,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/roomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="Room Name"
+        android:ems="10"
+        android:hint="@string/room_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/enterRoom"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:ignore="LabelFor,MissingConstraints,TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enterRoom"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/dark_green"
+        android:text="@string/enter_room"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tsprtBoard"
+        app:layout_constraintEnd_toEndOf="@+id/tsprtBoard"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/tsprtBoard"
+        app:layout_constraintTop_toBottomOf="@+id/roomName"
+        app:rippleColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

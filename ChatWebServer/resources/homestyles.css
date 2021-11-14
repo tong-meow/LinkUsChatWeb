@@ -1,0 +1,165 @@
+body {
+    background-image: url("./resources/pexels-matteo-badini-4064432.jpg");
+    background-color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+h1{
+    color:#545e56;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+
+    border-bottom: 2px solid #545e56;
+    width: 50%;
+    padding: 0.3em;
+    margin: 50px auto;
+}
+
+nav{
+    width: 60%;
+    margin: 2em auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav button{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    width: 150px;
+    padding:0 0.3em;
+    margin:0.2em auto;
+    border: 2px solid #667761;
+    border-radius: 0.1em;
+    background-color: #667761;
+    flex-direction: row;
+}
+
+@media ( max-width: 1030px){
+    nav{
+        width: 40%;
+    }
+}
+
+.login{
+    text-align: center;
+    width: 60%;
+    height: 580px;
+    background-color: #FFFFFF66;
+    padding: 2em 4em;
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+.login button{
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #667761;
+    border:1px solid #667761;
+    width: 20%;
+    height: 1.6em;
+    margin: 0 auto;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+button:hover{
+    background-color: #4c5749;
+    border-color: #4c5749;
+    transition: 0.3s;
+    box-shadow: 0 0.5em 0.5em -0.4em #4c5749;
+    transform: translateY(-0.1em);
+    cursor:pointer;
+}
+
+.login input{
+    height: 2em;
+    width: 35%;
+    border: 2px solid transparent;
+    background-color: #FFFFFF99;
+    border-radius: 0;
+    margin: 3px auto;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1100px){
+    .login input::placeholder{
+        font-size: 1em;
+    }
+
+    .login button{
+        font-size: 1em;
+    }
+}
+
+.login input::placeholder{
+    text-align: center;
+    color:#617253;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+input[type="text"]{
+    text-align: center;
+    color:#4c5749;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #4c5749;
+    transition:0.5s;
+}
+
+#messageBoard {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    height: 400px;
+    margin-top: 2em;
+    border:2px solid #4c5749;
+    border-radius: 0.5em;
+    text-align: left;
+    font-size: 1em;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+#messageBoard .rooms{
+    margin: 1em 2em 0 2em;
+    border-radius: 2px;
+    font-weight: 600;
+    background-color:#4c5749;
+    color:white;
+}
+
+#messageBoard p{
+    margin: 0.5em 2em 0.5em 2em;
+    color:#4b3008;
+}
+
+#messageBoard mark{
+    background-color: #FFFFFF66;
+}
+
+.typeBar{
+    margin: 2em auto auto auto;
+}
+
+#type{
+    width: 65%;
+    text-align: left;
+}
+
+footer{
+    color:#FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin: 3em auto 4em 15%;
+}

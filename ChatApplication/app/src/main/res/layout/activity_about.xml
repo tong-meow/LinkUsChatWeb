@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/aboutBoard"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/transparent_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.487"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/about_me"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBoard"
+        app:layout_constraintEnd_toEndOf="@+id/aboutBoard"
+        app:layout_constraintStart_toStartOf="@+id/aboutBoard"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/aboutContent"
+        android:layout_width="246dp"
+        android:layout_height="43dp"
+        android:text="@string/about_content1"
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/aboutBoard"
+        app:layout_constraintEnd_toEndOf="@+id/aboutBoard"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/aboutBoard"
+        app:layout_constraintTop_toTopOf="@+id/aboutBoard"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/aboutContent2"
+        android:layout_width="246dp"
+        android:layout_height="86dp"
+        android:text="@string/about_content2"
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/aboutBoard"
+        app:layout_constraintEnd_toEndOf="@+id/aboutBoard"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/aboutBoard"
+        app:layout_constraintTop_toTopOf="@+id/aboutBoard"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <ImageView
+        android:id="@+id/deathStranding"
+        android:layout_width="246dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/aboutBoard"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/aboutBoard"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.658"
+        app:srcCompat="@drawable/deathstranding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

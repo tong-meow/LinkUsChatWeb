@@ -1,0 +1,23 @@
+body {
+    background-image: url("./resources/pexels-matteo-badini-4064432.jpg");
+    background-color: transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+h1{
+    color: #545e56;
+    font-size: 3em;
+    padding: 0.3em;
+    margin: 50px 150px;
+}
+
+p{
+    color: #545e56;
+    font-size: 2em;
+    padding: 0.3em;
+    margin: 50px 155px;
+}
