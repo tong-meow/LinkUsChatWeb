@@ -1,24 +1,18 @@
 # LinkUsChatWeb
 
-## A. Logs
+## A. Concept
 
-- 10/15/2021 : Add a home page
-
-
-
-## B. Concept
-
-- Build a web based chatting platform
-- Users can chat online through the website
-- Users can search, add and view their contacts on the website
+- This chatting project contains two parts: a website and an Android app
+- A java server is built to support the website and the app
+- Both the website and the app allow users to add a chat room and chat online
+- Users can view the chatting histroy
+- Users can view the currently existed chat rooms
 
 
 
-## C. Reference
+## B. Reference
 
 - Pictures resources: [Unsplash](https://unsplash.com)
-- Icon resources: [Flaticon](https://www.flaticon.com)
 - Font resources: [Google Fonts](https://fonts.google.com)
-
 - HTML / CSS: [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - Key Vision & UI Concept Reference: *Death Stranding* by Kojima Productions
