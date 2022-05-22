@@ -1,4 +1,4 @@
-# LinkUsChatWebAndAndroidApp
+# LinkUs Chat Web and Android App
 
 ## A. Concept
 
